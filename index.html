@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body onload="OnLoad()">
+
+<h1 id="Title"> Go Fish! </h1>
+<table>
+    <tr>
+        <td id="UI"><canvas id="GameArea"></canvas></td>
+        <td id="UserInput">
+            <h2 id="DisplayTurn"> Please Select Your Settings</h2>
+            <canvas id="PlayerDeck"></canvas>
+            <div id="Settings">
+                <p> I Want
+                    <select id="AmountOfBots">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                    </select>
+                Opponents</p>
+                <p>Difficulty: <select id="Difficulty">
+                    <option> Easy </option>
+                    <option> Hard </option>
+                </select></p>
+            </div>
+            <p id="Directions"></p>
+            <p id="OptionsDialogue"> The Card I Choose Is: <select id="Options"></select></p>
+            <select id="QuitOptions">
+                <option>No</option>
+                <option>Yes</option>
+            </select>
+            <br>
+            <br>
+            <button type="button" id='ActionButton' onclick="Actions()"> Start </button>
+            <button type="button" id="QuitButton" onclick="AskQuit()">Quit Game</button>
+            <hr>
+            <h2 id="CommentaryTitle"> Commentary </h2>
+            <ul id="Commentary"></ul>
+            <div id="DisplayPairs">
+                <p id="PlayerPairs"></p>
+                <p id="C1Pairs"></p>
+                <p id="C2Pairs"></p>
+            </div>
+        </td>
+    </tr>
+</table>
+<p id="PlayerCards"></p>
+<p id="C1Cards"></p>
+<p id="C2Cards"></p>
+<p id="C3Cards"></p>
+<p id="Deck"></p>
+</body>
+</html>
